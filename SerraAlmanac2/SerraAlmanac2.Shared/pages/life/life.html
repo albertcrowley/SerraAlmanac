@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>life</title>
+
+    <link href="life.css" rel="stylesheet" />
+    <script src="life.js"></script>
+</head>
+<body>
+    <div id="viewbox" class="fixedlayout">
+        <div class="life fragment">
+            <header class="page-header" aria-label="Header content" role="banner">
+                <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+                <h1 class="titlearea win-type-ellipsis">
+                    <span class="pagetitle"></span>
+                </h1>
+            </header>
+            <section class="page-section" aria-label="Main content" role="main">
+                <div class="OuterLifeBlock">
+                    <div player="1" class="lifeBlock life1">
+                        <div class="lifeLife"><span class="lifeLifeInner">20</span></div>
+                        <div class="lifeName">Player 1</div>
+                        <div class="lifeUp lifeButton" player="1" delta="1" >+</div>
+                        <div class="lifeDown lifeButton" player="1" delta="-1">-</div>
+                    </div>
+                    <div player="2" class="lifeBlock life2">
+                        <div class="lifeLife"><span class="lifeLifeInner">20</span></div>
+                        <div class="lifeName">Player 2</div>
+                        <div class="lifeUp lifeButton" player="2" delta="1">+</div>
+                        <div class="lifeDown lifeButton" player="2" delta="-1">-</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="myFlyOut" data-win-control="WinJS.UI.Flyout">
+        <label for="txtName">Enter your name</label>
+        <input type="text" id="txtName" value="" />
+        <input type="button" id="btnDoneName" value="Done" />
+    </div>
+</body>
+</html>

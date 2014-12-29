@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c4367040-d37e-465b-87d8-b428c056137f</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)data\AllSetsArray.json" />
+    <Content Include="$(MSBuildThisFileDirectory)images\fire.png" />
+    <Content Include="$(MSBuildThisFileDirectory)js\default.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\data.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\jquery-2.1.1.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\logic.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\navigator.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\bower.json" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\component.json" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\composer.json" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\CONTRIBUTING.md" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\LICENSE" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\package.json" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\README.md" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\release.sh" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2-bootstrap.css" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2-spinner.gif" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2.css" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2.jquery.json" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2.min.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2x2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_ar.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_az.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_bg.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_ca.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_cs.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_da.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_de.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_el.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_en.js.template" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_es.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_et.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_eu.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_fa.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_fi.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_fr.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_gl.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_he.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_hr.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_hu.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_id.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_is.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_it.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_ja.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_ka.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_ko.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_lt.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_lv.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_mk.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_ms.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_nb.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_nl.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_pl.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_pt-BR.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_pt-PT.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_ro.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_rs.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_ru.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_sk.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_sv.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_th.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_tr.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_ug-CN.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_uk.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_vi.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_zh-CN.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\Select2\select2_locale_zh-TW.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\underscore.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\builder\builder.css" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\builder\builder.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\builder\builder.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\home\home.css" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\home\home.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\home\home.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\hub\hub.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\hub\section1Page.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\hub\section1Page.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\hub\section2Page.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\hub\section2Page.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\hub\section3Page.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\hub\section4Page.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\hub\section4Page.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\item\item.css" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\item\item.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\item\item.js" />
+    <Content Include="$(MSBuildThisFileDirectory)images\gray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\life\life.css" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\life\life.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\life\life.js" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\search\search.css" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\search\search.html" />
+    <Content Include="$(MSBuildThisFileDirectory)pages\search\search.js" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\en-US\resources.resjson" />
+  </ItemGroup>
+</Project>

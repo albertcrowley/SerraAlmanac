@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>search</title>
+
+    <link href="search.css" rel="stylesheet" />
+    <script src="search.js"></script>
+</head>
+<body>
+    <div class="search fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to search</span>
+            </h1>
+        </header>
+        <section class="page-section search-wrapper" aria-label="Main content" role="main">
+            <div class="searchInputBlock">
+                <select id="selSet"  ></select>
+            </div>
+            <div class="searchResults" id="searchResults">
+
+                <div id="cardTemplate" data-win-control="WinJS.Binding.Template">
+                    <div data-win-bind="" class="card" >
+                        <div class="name">
+                            <span data-win-bind="innerText : name"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card-listview"
+                     data-win-control="WinJS.UI.ListView"
+                     data-win-options="{ itemDataSource : SerraAlmanac.cardResults.dataSource,
+                 itemTemplate : select('#cardTemplate'), tapBehavior: 'invoke',    selectionMode: 'none' }">
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>

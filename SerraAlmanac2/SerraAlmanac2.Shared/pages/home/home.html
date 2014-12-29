@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>home</title>
+
+    <link href="home.css" rel="stylesheet" />
+    <script src="home.js"></script>
+    <script src="/js/data.js"></script>
+</head>
+<body>
+    <div class="home fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to home</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+
+            <div id="menuTemplate" data-win-control="WinJS.Binding.Template">
+                <div data-win-bind="" class="menuWrapper" onclick="SerraAlmanac.menuClick">
+                    <img class="menuImage" data-win-bind="src : picture" />
+                    <div class="menuText">
+                        <span data-win-bind="innerText : text"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu-listview"
+                 data-win-control="WinJS.UI.ListView"
+                 data-win-options="{ itemDataSource : SerraAlmanac.menuList.dataSource,
+                 itemTemplate : select('#menuTemplate'), tapBehavior: 'invoke',    selectionMode: 'none' }">
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>
