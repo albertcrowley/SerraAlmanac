@@ -9,7 +9,7 @@
     var list = new WinJS.Binding.List(menuData);
     WinJS.Namespace.define("SerraAlmanac", {menuList:list});
     
-    var list = [{ name: "test" }, { name: "more" }, { name: "cards" }];
+    var list = [];
     var wlist = new WinJS.Binding.List(list);
     WinJS.Namespace.define("SerraAlmanac", { cardResults: wlist });
 

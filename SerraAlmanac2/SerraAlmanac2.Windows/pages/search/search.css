@@ -1,0 +1,123 @@
+﻿.search-wrapper {
+    position: relative;
+	height: 800px;
+    top:20px;
+	overflow-x: scroll;
+}
+.searchInputBlock {
+    position: absolute;
+    left: 20px;
+    width: 300px;
+    height: 100%;
+}
+
+.searchResults {
+    position: absolute;
+    left: 360px;
+    top:0px;
+    height: 680px;
+	
+}
+
+.search section {
+	margin: auto 120px;
+}
+
+#card-listview  {
+    position:absolute;
+    top:0px;
+    height:680px;
+    xbackground-color:orange;
+}
+#card-listview .win-viewport {
+    height: 680px;
+    top: 0px;
+    position:relative;
+    background-color:blue;
+	width: auto;
+}
+
+.card {
+    position:relative;
+    width: 232px;
+    height: 330px;
+    float:left;
+}
+.card .cardImage img {
+    width:232px;
+    height:330px;
+    z-index: 10;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.card .name {
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.card .mana {
+    position:absolute;
+    top:0px;
+    right:0px;
+    text-align:right;
+}
+.card .cardText {
+    position:absolute;
+    top:150px;
+    font-size:small;
+}
+
+#card-overlay {
+    display:none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top:-350px;
+    margin-left: -300px;
+    width: 600px;
+    height:700px;
+    border: 5px solid white;
+    z-index: 20;
+    background-color:gray;
+}
+
+#card-overlay .card .cardImage img {
+    z-index: 10;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:480px;
+    height:680px;
+}
+
+/*
+.phone .search .page-section {
+	margin: auto 24px;
+}
+
+.phone .search .page-header .titlearea {
+	-ms-grid-column: 1;
+	margin-top: 37px;
+	margin-left: 24px;
+	font-size: 28pt;
+	width: calc(100vw - 20px);
+}
+
+.phone .search .back-button {
+	display: none;
+}
+
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+}
+
+	.fragment section[role=main] {
+		-ms-grid-row: 2;
+		height: 100%;
+	}
+    */

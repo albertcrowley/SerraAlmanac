@@ -49,9 +49,7 @@
     <RequiredPlatformVersion>8.1</RequiredPlatformVersion>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    
     <PackageCertificateKeyFile>SerraAlmanac2_TemporaryKey.pfx</PackageCertificateKeyFile>
-    
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -66,12 +64,13 @@
     <Content Include="pages\hub\hub.html" />
     <Content Include="pages\hub\hub.css" />
     <Content Include="pages\hub\section3Page.html" />
+    <Content Include="pages\search\search.css" />
+    <Content Include="pages\search\search.html" />
+    <Content Include="pages\search\search.js" />
     <Content Include="pages\section\section.html" />
     <Content Include="pages\section\section.js" />
     <Content Include="pages\section\section.css" />
-    
     <None Include="SerraAlmanac2_TemporaryKey.pfx" />
-    
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.2.0, Version=1.0" />

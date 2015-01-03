@@ -13,6 +13,7 @@
     <Content Include="$(MSBuildThisFileDirectory)js\jquery-2.1.1.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\logic.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\navigator.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\searchWorker.js" />
     <Content Include="$(MSBuildThisFileDirectory)js\Select2\bower.json" />
     <Content Include="$(MSBuildThisFileDirectory)js\Select2\component.json" />
     <Content Include="$(MSBuildThisFileDirectory)js\Select2\composer.json" />
@@ -97,9 +98,6 @@
     <Content Include="$(MSBuildThisFileDirectory)pages\life\life.css" />
     <Content Include="$(MSBuildThisFileDirectory)pages\life\life.html" />
     <Content Include="$(MSBuildThisFileDirectory)pages\life\life.js" />
-    <Content Include="$(MSBuildThisFileDirectory)pages\search\search.css" />
-    <Content Include="$(MSBuildThisFileDirectory)pages\search\search.html" />
-    <Content Include="$(MSBuildThisFileDirectory)pages\search\search.js" />
     <PRIResource Include="$(MSBuildThisFileDirectory)strings\en-US\resources.resjson" />
   </ItemGroup>
 </Project>
