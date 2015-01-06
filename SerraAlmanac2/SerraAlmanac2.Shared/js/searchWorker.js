@@ -10,7 +10,7 @@ onmessage = function (event) {
     var hits = 0;
     var limitHit = false;
     var BATCH_SIZE = 5;
-    var HIT_LIMIT = 1000;
+    var HIT_LIMIT = 500;
 
     var dupeList = {};
 
@@ -26,7 +26,7 @@ onmessage = function (event) {
     _.each(matches, function (set) {
         if (hits > HIT_LIMIT) { limitHit = true;  return; }
         _.each(set.cards, function (card) {
-            if (hits > HIT_LIMIT) { limitHit = true; return;}
+            if (hits >= HIT_LIMIT) { limitHit = true; return;}
 
             if (colors.length > 0) {
                 var colorMatchCount = _.intersection(colors, card.colors).length;

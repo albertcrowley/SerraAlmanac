@@ -43,7 +43,10 @@
             var listView = element.querySelector('#card-listview').winControl;
             listView.addEventListener("iteminvoked", this.cardClick, false);
 
-
+            // card overlay controls
+            jQuery("#card-overlay .close").click(this.closeCardDetails);
+            SerraAlmanac.deckManager.populateDeckDropdown(jQuery("#card-overlay #deckSelect"));
+            jQuery("#card-overlay #addCardToDeck").click(this.addCardToDeck);
 
         },
 
@@ -67,11 +70,14 @@
             }
             SerraAlmanac.runSearch();
         },
+        openCard : null,
         cardClick: function (e) {
+            this.openCard = e.detail.itemPromise._value.data;
+            WinJS.Namespace.define("SerraAlmanac", { openCard: this.openCard });
             e.detail.itemPromise.done(function (itemInvoked) {
-                console.log (itemInvoked);
                 var overlay = jQuery("#card-overlay");
                 overlay.hide();
+                overlay.find(".card").attr("multiverseid");
                 overlay.find(".name").html(itemInvoked.data.name);
                 overlay.find(".manaCost").html(itemInvoked.data.manaCost);
                 overlay.find('.cardText').html(itemInvoked.data.text);
@@ -79,13 +85,26 @@
                 overlay.show();
             });
         },
+        closeCardDetails : function() {
+            jQuery("#card-overlay").hide();
+        },
+        addCardToDeck: function () {
+            var deckName = jQuery("#card-overlay #deckSelect option:selected").text();
+            (new Windows.UI.Popups.MessageDialog("Added " + SerraAlmanac.openCard.name + " to " + deckName , "Card Added")).showAsync().done();
+        },
+        searchWorker: null,
         runSearch: function () {
             // empty the list
             SerraAlmanac.cardResults.splice(0, SerraAlmanac.cardResults.length);
 
+            //reset everything
+            if (this.searchWorker != null) { this.searchWorker.terminate() };
+            jQuery(".spinner").html("");
+            jQuery(".numberHits").html("");
+
             //setup worker
-            var searchWorker = new Worker("js/searchWorker.js");
-            searchWorker.onmessage = function (e) {
+            this.searchWorker = new Worker("js/searchWorker.js");
+            this.searchWorker.onmessage = function (e) {
                 if (e.data.event == "searchHit") {
                     _.each(e.data.payload, function (card) { SerraAlmanac.cardResults.push(card); })                    
                     jQuery(".numberHits").html(SerraAlmanac.cardResults.length + " results found.");
@@ -113,7 +132,7 @@
             }
 
 
-            searchWorker.postMessage({ cardDB: SerraAlmanac.cardDB, search: search });
+            this.searchWorker.postMessage({ cardDB: SerraAlmanac.cardDB, search: search });
             jQuery(".spinner").html("Working....");
             jQuery(".numberHits").html("");
 
